@@ -2,7 +2,7 @@
 
 Name: sugar-browse-activity
 Version: 103
-Release: %mkrel 1
+Release: %mkrel 2
 Summary: Browse activity for Sugar
 License: GPLv2+
 Group: Graphical desktop/Other
@@ -11,11 +11,11 @@ Url: http://sugarlabs.org/
 Source: http://download.sugarlabs.org/sources/sucrose/fructose/Browse/Browse-103.tar.bz2
 
 Requires: python-hulahop >= 0.4.8
-Requires: sugar-toolkit >= 0.83.4
+Requires: sugar-toolkit >= 0.83.6
 Requires: python  
 Requires: python-cjson  
 
-BuildRequires: sugar-toolkit >= 0.83.4
+BuildRequires: sugar-toolkit >= 0.83.6
 BuildRequires: libpython-devel  
 BuildRequires: gettext  
 
