@@ -13,11 +13,11 @@ Source: http://download.sugarlabs.org/sources/sucrose/fructose/Browse/Browse-105
 Requires: python-hulahop >= 0.4.9
 Requires: python  
 Requires: python-cjson  
-Requires: sugar-toolkit >= 0.84.0
+Requires: sugar-toolkit >= 0.84.1
 
 BuildRequires: gettext  
 BuildRequires: libpython-devel  
-BuildRequires: sugar-toolkit >= 0.84.0
+BuildRequires: sugar-toolkit >= 0.84.1
 
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 BuildArch: noarch
