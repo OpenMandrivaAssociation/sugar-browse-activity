@@ -2,13 +2,15 @@
 
 Name: sugar-browse-activity
 Version: 107
-Release: %mkrel 1
+Release: %mkrel 2
 Summary: Browse activity for Sugar
 License: GPLv2+
 Group: Graphical desktop/Other
 Url: http://sugarlabs.org/
 
 Source: http://download.sugarlabs.org/sources/sucrose/fructose/Browse/Browse-107.tar.bz2
+
+Patch: sugar-browse-activity-107-sugar-456.patch
 
 Requires: python-hulahop >= 0.4.9
 Requires: python  
@@ -28,7 +30,7 @@ Gecko rendering engine as Firefox.
 
 %prep
 %setup -q -n Browse-107
-
+%patch -p1
 
 %build
 python  \
