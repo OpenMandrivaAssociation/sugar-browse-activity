@@ -16,11 +16,11 @@ Patch: sugar-browse-activity-114-sugar-456.patch
 Requires: python-hulahop >= 0.6.0
 Requires: python  
 Requires: python-cjson  
-Requires: sugar-toolkit >= 0.86.0
+Requires: sugar-toolkit >= 0.86.1
 
 BuildRequires: gettext  
 BuildRequires: libpython-devel  
-BuildRequires: sugar-toolkit >= 0.86.0
+BuildRequires: sugar-toolkit >= 0.86.1
 
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 BuildArch: noarch
