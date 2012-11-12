@@ -1,0 +1,20 @@
+diff --git a/webactivity.py b/webactivity.py
+index 4be551e..4fd18da 100644
+--- a/webactivity.py
++++ b/webactivity.py
+@@ -32,9 +32,12 @@ import cjson
+ import gconf
+ import locale
+ 
+-# HACK: Needed by http://dev.sugarlabs.org/ticket/456
+-import gnome
+-gnome.init('Hulahop', '1.0')
++try:
++    # HACK: Needed by http://dev.sugarlabs.org/ticket/456
++    import gnome
++    gnome.init('Hulahop', '1.0')
++except:
++    pass
+ 
+ from sugar.activity import activity
+ from sugar.graphics import style
