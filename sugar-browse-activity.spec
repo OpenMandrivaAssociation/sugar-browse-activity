@@ -2,34 +2,29 @@
 #       See http://wiki.sugarlabs.org/go/Deployment_Team/jhconvert for details
 
 Name:		sugar-browse-activity
-Version:	115
-Release:	3
+Version:	156
+Release:	1
 Summary:	Browse activity for Sugar
 License:	GPLv2+
 Group:		Graphical desktop/Other
 Url:		http://sugarlabs.org/
 
-Source:		http://download.sugarlabs.org/sources/sucrose/fructose/Browse/Browse-115.tar.bz2
+Source:		http://download.sugarlabs.org/sources/sucrose/fructose/Browse/Browse-%{version}.tar.bz2
 
-Patch:		sugar-browse-activity-115-sugar-456.patch
-
-Requires:	python-hulahop >= 0.7.1
 Requires:	python-cjson  
-Requires:	sugar-toolkit >= 0.88.0
+Requires:	sugar-toolkit-gtk3 >= 0.88.0
 
 BuildRequires:	gettext  
 BuildRequires:	python-devel  
-BuildRequires:	sugar-toolkit >= 0.88.0
+BuildRequires:	sugar-toolkit-gtk3 >= 0.88.0
 
 BuildArch:	noarch
 
 %description
-Browse is a Web browser built on Xulrunner and thus uses the same
-Gecko rendering engine as Firefox.
+Browse is a Web browser built on WebKit.
 
 %prep
-%setup -q -n Browse-115
-%patch -p1
+%setup -q -n Browse-%{version}
 
 %build
 
