@@ -3,7 +3,7 @@
 
 Name:		sugar-browse-activity
 Version:	156
-Release:	1
+Release:	2
 Summary:	Browse activity for Sugar
 License:	GPLv2+
 Group:		Graphical desktop/Other
