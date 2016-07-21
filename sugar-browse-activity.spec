@@ -2,8 +2,8 @@
 #       See http://wiki.sugarlabs.org/go/Deployment_Team/jhconvert for details
 
 Name:		sugar-browse-activity
-Version:	156
-Release:	2
+Version:	200
+Release:	1
 Summary:	Browse activity for Sugar
 License:	GPLv2+
 Group:		Graphical desktop/Other
@@ -11,12 +11,14 @@ Url:		http://sugarlabs.org/
 
 Source:		http://download.sugarlabs.org/sources/sucrose/fructose/Browse/Browse-%{version}.tar.bz2
 
-Requires:	python-cjson  
 Requires:	sugar-toolkit-gtk3 >= 0.88.0
-
+Requires:	typelib(WebKit2)
+Requires:	typelib(Soup)
+Requires:	typelib(SoupGNOME)
 BuildRequires:	gettext  
-BuildRequires:	python-devel  
+BuildRequires:	python2-devel
 BuildRequires:	sugar-toolkit-gtk3 >= 0.88.0
+BuildRequires:	typelib(WebKit2)
 
 BuildArch:	noarch
 
@@ -29,10 +31,10 @@ Browse is a Web browser built on WebKit.
 %build
 
 rm -f MANIFEST
-python setup.py build
+python2 setup.py build
 
 %install
-python setup.py install --prefix=%{buildroot}/%{_prefix}
+python2 setup.py install --prefix=%{buildroot}/%{_prefix}
 find %{buildroot} -name '*.py.orig' -print0 | xargs -0 rm -f
 %find_lang org.laptop.WebActivity
 
